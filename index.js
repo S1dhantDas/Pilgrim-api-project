@@ -1,5 +1,7 @@
 const express = require('express');
+const enableCors = require('cors');
 const app = express();
+app.use(enableCors());
 const port = process.env.PORT || 3000;
 
 const productRecommendations = {
